@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mybatisdemo.dao.IUserDao">
     <!--配置查询所有-->
-    
+
     <!--findAll方法的配置-->
-    <select id="findAll">
-        select * form user;
+    <select id="findAll" resultType="com.mybatisdemo.domain.User">
+        select * from user
     </select>
 </mapper>
